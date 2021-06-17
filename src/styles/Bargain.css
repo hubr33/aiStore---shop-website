@@ -1,0 +1,56 @@
+main.bargain .bargain-offers {
+  width: 100%;
+}
+
+main.bargain .bargain-offers .one-offer {
+  width: 80%;
+}
+
+main.bargain .buy-zone .price-area .price {
+  text-decoration: line-through;
+}
+
+main.bargain .buy-zone .bargain-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+
+main.bargain .buy-zone .bargain-price p {
+  line-height: 50px;
+  width: 240px;
+  text-align: center;
+  height: 50px;
+  transform: skew(-20deg);
+  background: rgb(230, 43, 43);
+  font-size: 30px;
+}
+
+main.bargain .bargain-offers .one-offer .buy-zone .rrso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+main.bargain .bargain-offers .one-offer .buy-zone .rrso .rrsoSecondP,
+main.bargain .bargain-offers .one-offer .buy-zone .rrso .rrsoFirstP {
+  font-size: 18px;
+  text-align: center;
+}
+
+main.bargain .bargain-offers .one-offer .buy-zone .rrso .rrsoFirstP span,
+main.bargain .bargain-offers .one-offer .buy-zone .rrso .rrsoSecondP span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+main.bargain .bargain-offers .one-offer .offer-information .item-information {
+  width: 400px;
+  height: 300px;
+}
+
+main.bargain .bargain-offers .one-offer .buy-zone {
+  width: calc(100% - 700px);
+}

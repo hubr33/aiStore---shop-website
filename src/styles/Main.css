@@ -1,0 +1,565 @@
+:root {
+  --bgc-color: #007cc7;
+  --white-color: #eefbfb;
+}
+
+div.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+div.wrapper main {
+  display: flex;
+  background-color: rgb(240, 240, 240);
+  width: 100%;
+}
+
+div.wrapper section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% - 400px);
+  min-height: calc(100vh - 60px);
+}
+
+div.wrapper section .one-offer {
+  width: 98%;
+  height: 340px;
+  margin-top: 20px;
+  background-color: rgb(218, 218, 224);
+  box-shadow: 0px 0px 6px black;
+}
+
+div.wrapper section .one-offer:last-child {
+  margin-bottom: 20px;
+}
+
+div.wrapper section .one-offer .offer-title {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 24px;
+  padding-left: 20px;
+}
+
+div.wrapper section .one-offer .offer-information {
+  display: flex;
+  width: 100%;
+  height: 300px;
+}
+
+div.wrapper section .one-offer .offer-information .item-photo {
+  width: 300px;
+  height: 300px;
+}
+
+div.wrapper section .one-offer .offer-information .item-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 10px;
+  width: 400px;
+  height: 300px;
+}
+
+div.wrapper section .one-offer .offer-information .item-information div {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+div.wrapper section .one-offer .offer-information .item-information div p {
+  padding-left: 16px;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+div.wrapper section .one-offer .buy-zone {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 700px);
+  height: 300px;
+}
+
+div.wrapper section .one-offer .buy-zone .price-area {
+  display: flex;
+  height: 70px;
+  width: 100%;
+  padding-left: 20px;
+}
+
+div.wrapper section .one-offer .buy-zone .price-area p.price {
+  color: red;
+  height: 100%;
+  font-size: 60px;
+  padding-right: 5px;
+}
+
+div.wrapper section .one-offer .buy-zone .price-area .price-rest {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 20px;
+}
+
+div.wrapper section .one-offer .buy-zone .price-area .price-rest .rest {
+  text-decoration: underline;
+}
+
+div.wrapper section .one-offer .buy-zone .rrso {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+div.wrapper section .one-offer .buy-zone .rrso p {
+  padding-left: 20px;
+  text-align: center;
+  width: 100%;
+  height: 33.33%;
+  font-size: 18px;
+}
+
+div.wrapper section .one-offer .buy-zone .rrso p span {
+  font-weight: bold;
+}
+
+div.wrapper section .one-offer .buy-zone .to-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 130px;
+}
+
+div.wrapper section .one-offer .buy-zone .to-cart .buy-now {
+  height: 50%;
+  width: 80%;
+  border: none;
+  font-size: 22px;
+  color: var(--white-color);
+  text-transform: uppercase;
+  background-color: var(--bgc-color);
+}
+
+div.wrapper section .one-offer .buy-zone .to-cart .buy-now:hover {
+  cursor: pointer;
+  background-color: #008ee6;
+}
+
+div.wrapper section .one-offer .buy-zone .to-cart .call-to-shop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  width: 100%;
+}
+
+div.wrapper section .one-offer .buy-zone .to-cart .call-to-shop p {
+  font-size: 12px;
+}
+
+div.wrapper aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 400px;
+}
+
+div.wrapper aside .shop-info {
+  width: 90%;
+  height: 90%;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: rgb(220, 220, 220);
+  box-shadow: 0 0 6px black;
+}
+
+div.wrapper aside .shop-info .open-hours {
+  display: flex;
+  width: 100%;
+  height: 80%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div.wrapper aside .shop-info .open-hours h2 {
+  font-size: 30px;
+  text-align: center;
+  padding: 8px 0;
+}
+
+div.wrapper aside .shop-info .open-hours h3 {
+  font-size: 18px;
+  padding: 0 8px;
+}
+div.wrapper aside .shop-info .open-hours p {
+  font-size: 16x;
+  padding: 0 8px;
+}
+
+div.wrapper aside .shop-info .offer-slider {
+  position: relative;
+  height: 20%;
+  width: 100%;
+}
+
+div.wrapper aside .shop-info .offer-slider p {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: -50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: rgb(43, 43, 206);
+  animation: anim infinite 5s;
+}
+
+@keyframes anim {
+  0% {
+    left: -50%;
+    transform: translate(-50%, -50%);
+  }
+  10% {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  90% {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    left: 150%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+main .form-shadow {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 3;
+}
+
+main .form-shadow.open {
+  display: flex;
+}
+
+main .form-shadow.open section {
+  display: none;
+  height: 500px;
+  overflow: hidden;
+}
+
+section.roll {
+  height: calc(100vh);
+  overflow: hidden;
+}
+
+main .form-shadow .form-area .closeForm {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  outline: none;
+  font-size: 28px;
+  padding: 4px 10px 4px 20px;
+  background-color: transparent;
+  color: var(--white-color);
+}
+
+main .form-shadow .form-area .closeForm:hover {
+  cursor: pointer;
+}
+
+.form-shadow .form-area {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  width: 900px;
+  height: 740px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.form-shadow .form-area h2 {
+  text-align: center;
+  padding: 6px 0;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.form-shadow .form-area label {
+  text-align: center;
+  color: var(--bgc-color);
+}
+
+.form-shadow .form-area input {
+  outline: none;
+  padding-left: 10px;
+  width: 70%;
+  height: 24px;
+  border: none;
+  border-radius: 5px;
+}
+
+.form-shadow .form-area input.error {
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+.form-shadow .form-area input:focus {
+  background-color: var(--bgc-color);
+  color: var(--white-color);
+}
+
+.form-shadow .form-area input:focus::placeholder {
+  color: black;
+}
+.form-shadow .form-area select {
+  border-radius: 5px;
+  outline: none;
+}
+
+.form-shadow .form-area select.error {
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+.form-shadow .form-area .acceptAndAddItem {
+  width: 30%;
+  padding: 4px 0;
+  font-size: 16px;
+  color: var(--bgc-color);
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.form-shadow .form-area .acceptAndAddItem:hover {
+  color: white;
+  background-color: var(--bgc-color);
+  cursor: pointer;
+}
+
+div.cart-container {
+  position: absolute;
+  visibility: hidden;
+  width: 600px;
+  height: 400px;
+  left: 50%;
+  top: -600px;
+  transform: translateX(-50%);
+  background-color: white;
+  z-index: -1;
+  overflow: scroll;
+  box-shadow: 0px 0px 6px black;
+  transition: 0.4s linear;
+}
+
+div.cart-container.active {
+  top: 80px;
+  visibility: visible;
+  z-index: 4;
+}
+
+.cart-container .cartItem {
+  border-top: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 150px;
+  background-color: rgb(235, 235, 245);
+}
+
+.cart-container .cartPicture {
+  width: 150px;
+  height: 100%;
+  overflow: hidden;
+  background-color: beige;
+}
+.cartPicture img {
+  width: 100%;
+}
+
+.cartInfo {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 55%;
+  height: 100%;
+}
+
+.cartBuyBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-transform: uppercase;
+  align-items: center;
+  flex-grow: 1;
+}
+.cartBuyBtn:hover {
+  cursor: pointer;
+  background-color: rgb(225, 225, 245);
+}
+
+.addedToCartAlert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 400px;
+  height: 130px;
+  left: 300px;
+  top: -150px;
+  background-color: var(--white-color);
+  border-radius: 5px;
+  border: 2px solid black;
+  box-shadow: 0 0 6px black;
+  transition: 0.35s linear;
+  z-index: 10;
+}
+
+.addedToCartAlert.add {
+  top: 100px;
+}
+
+.addedToCartAlert p {
+  text-transform: uppercase;
+  color: green;
+  font-size: 22px;
+}
+
+.orderShadow {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 6;
+}
+.orderShadow.open {
+  display: block;
+}
+.orderItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  width: 900px;
+  height: 600px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  background-color: #1ea9ff;
+  z-index: 5;
+}
+
+.orderItem h3 {
+  font-size: 30px;
+}
+
+.orderItem label {
+  font-weight: bold;
+}
+
+.orderItem input {
+  border: none;
+  width: 600px;
+  padding: 6px 10px;
+  outline: none;
+  border-radius: 5px;
+}
+
+.orderItem select {
+  outline: none;
+  border-radius: 5px;
+}
+
+.orderItem input.error,
+.orderItem select.error {
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.orderItem .orderPrice {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 60px;
+}
+
+.orderItem .orderPrice .orderItemPrice,
+.orderItem .orderPrice .orderItemAllCosts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.orderItem .orderButtons {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+}
+
+.orderItem .orderButtons button {
+  border: none;
+  border-radius: 5px;
+  padding: 6px 30px;
+  background-color: white;
+  font-size: 16px;
+}
+
+.orderItem .orderButtons button:hover {
+  cursor: pointer;
+  background-color: rgb(235, 235, 245);
+}
+
+main .successfulOrder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: -200px;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 140px;
+  background-color: #008ee6;
+  border-radius: 5px;
+  border: 2px solid black;
+  box-shadow: 0 0 4px 0px white;
+  transition: 0.4s;
+}
+
+main .successfulOrder.sent {
+  top: 100px;
+}
+
+main .successfulOrder p {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
